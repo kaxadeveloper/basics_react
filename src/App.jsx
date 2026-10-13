@@ -6,6 +6,8 @@ import RandomColor from "./components/random-color/RandomColor";
 import StarRating from "./components/star-rating/StarRating";
 import ImageSlider from "./components/image-slider/ImageSlider";
 import LoadMoreData from "./components/load-more-data/LoadMoreData";
+import TreeView from "./components/tree-view/TreeView";
+import menus from "./components/tree-view/data";
 
 const pages = [
   { key: "accordion", element: <Accordion /> },
@@ -18,6 +20,7 @@ const pages = [
     ),
   },
   { key: "load-more-data", element: < LoadMoreData/> },
+  { key: "tree-view", element: < TreeView menus={menus}/> },
 ];
 
 function App() {
